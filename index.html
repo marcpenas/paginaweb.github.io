@@ -1,0 +1,177 @@
+<DOCTYPE html> </DOCTYPE>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>La Última y me Voy Drinking Bar</title>
+    <link rel="stylesheet" type="text/css" href="css/estil.css">
+    <link rel=stylesheet href="icomoon/style.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.js"></script>
+    <script>
+             $(document).ready(function(){
+            $('section[data-type="parallax_section"]').each(function(){
+                var $bgobj = $(this);
+                $(window).scroll(function() {
+                    $window = $(window);
+                    var ypos = -($window.scrollTop() / $bgobj.data('speed'));
+                    var coords = '100%'+ ypos + 'rem';
+                    $bgobj.css({ backgroundPosition: coords });
+                });
+            });   
+        });
+    </script>
+</head>
+<header>
+    <div class="CasaPiruleta">
+        <img id="CA" src="fotos/logo-removebg-preview.png">       
+        <div class="logo">La Última y me Voy</div>
+    </div>
+              <a href="#" class="ham"><span class="icon-menu"></span></a>
+    <nav class="nav_barra">
+            <ul>
+                <li><a href="#seccio2" class="active">Qui Som Nosaltres?</a></li>
+                <li><a href="#seccio3">Per Picar</a></li>
+                <li class="submenu">
+                    <a href="#seccio4">Per Beure <span class="icon2 icon-triangle-down"></span></a>
+                    <ul class="subm_fill">
+                        <li><a href="#">Cóctels</a></li>
+                        <li><a href="#">Licors</a></li>
+                        <li><a href="#">Tradicionals</a></li>
+                        <li><a href="#">Especialitats</a></li>
+                    </ul>
+             </li>
+            </ul>
+        </nav>
+</header>
+
+
+
+<body>
+    <section id="seccio1" data-type="parallax_section" data-speed="13">
+        <div>
+        <h2>"El día que leí que el alcohol era malo para la salud dejé de leer"</h2>
+        <a>- Aristóteles, 321 a.C. </a>
+        </div>
+    </section>
+    <section id="seccio2" data-type="parallax_section" data-speed="5">
+        <h2>Qui Som Nosaltres?</h2>
+        <div class="acordeon">
+            <div class="imatge">
+                <img src="/Projecte_MarcPenas/fotos/barman.jpg" alt="">
+            </div>
+            <div class="contenidor">
+                <div class="noticia">
+                    <div class="titol">
+                        <p class="Culers">El local</p>
+                    </div>
+                    <div class="info">
+                        <p class="missg">A La Última y me Voy ens esforçem per tenir un local acollidor on poder realitzar activitats d'oci sense preocupacions.</p>
+                    </div>
+                </div>
+                <div class="noticia">
+                    <div class="titol">
+                        <p class="Culers">L'Equip</p>
+                    </div>
+                    <div class="info">
+                        <p class="missg">Ens enorgullim de tenir un equip complert d'especialistes, com ara el nostre parell "Barmans", els cambrers o els nostres cuiners.</p>
+                    </div>
+                </div>
+                <div class="noticia">
+                    <div class="titol">
+                        <p class="Culers">La Beguda</p>
+                    </div>
+                    <div class="info">
+                        <p class="missg">Gràcies a les habilitats dels nostres empleats, podem oferir tot tipus de begudes i "cóctels" de gran qualitat, com ara "Piña Colada", "Margarita", etc. </p>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+       
+    </section>
+    <section id="seccio3" >
+        <h2>Per Picar</h2>
+        <div class="centrat">
+        <article>
+            <div class="ñam">
+                <div class="snack1"></div>
+                <h3>Patates Braves al Forn</h3>
+                <p class="escrit">
+                   Les clàsiques Patates Braves fetes al forn, fetes a la cuina dels nostres Chefs. També hi oferim junt amb aquest plat un acompanyament de salsa picant exquisita marca de la casa, o per aquells mes clàsics, Ketchup i Maionesa.  
+                </p>
+            </div>
+        </article>
+        <article>
+            <div class="ñam">
+                <div class="snack2"></div>
+                <h3>"Pescadito Frito"</h3>
+                <p class="escrit">
+                   Una ració de peixet fregit amb una fritura a la andalusa, juntament amb un acompanyament opcional de rodanxa de llimona.
+                </p>
+            </div>
+        </article>
+        <article>
+            <div class="ñam">
+                <div class="snack3"></div>
+                <h3>Croquetes</h3>
+                <p class="escrit">
+                    La recepta de l'àvia implementada a les nostres croquetes. Les oferim tant de pollastre, pernil o formatge, però independentment dels ingredients prometem que el sabor es impecable.
+                </p>
+            </div>
+        </article>
+    </div>
+    </section>
+    <section id="seccio4">
+        <h2>Per Beure</h2>
+        <div class="grid">
+            <div class="grid-item">...</div>
+            <div class="grid-item grid-item--width2">...</div>
+            <div class="grid-item">...</div>
+        </div>
+        <div>
+        <div class="grid js-masonry">
+            <div class="grid-item">
+                <img src="/Projecte_MarcPenas/fotos/margarita.jpg" alt="">
+                <p>Margarita</p>
+            </div>
+            <div class="grid-item">
+                <img src="/Projecte_MarcPenas/fotos/caipirinha.jpg" alt="">
+                <p>Caipirinha</p>
+            </div>
+            <div class="grid-item">
+                <img src="/Projecte_MarcPenas/fotos/bluelagoon.jpg" alt="">
+                <p>Blue Lagoon</p>
+            </div>
+            <div class="grid-item">
+                <img src="/Projecte_MarcPenas/fotos/mai tai.jpg" alt="">
+                <p>Mai Tai</p>
+            </div>
+            <div class="grid-item">
+                <img src="/Projecte_MarcPenas/fotos/piñacolada.jpg" alt="">
+                <p>Piña Colada</p>
+            </div>
+            <div class="grid-item">
+                <img src="/Projecte_MarcPenas/fotos/tomcollins.jpg" alt="">
+                <p>Tom Collins</p>
+            </div>
+            <div class="grid-item">
+                <img src="/Projecte_MarcPenas/fotos/bloodymary.jpg" alt="">
+                <p>Bloody Mary</p>
+                </div>
+            <div class="grid-item">
+            <img src="/Projecte_MarcPenas/fotos/martini.jpg" alt="">
+                <p>Martini</p>
+            </div>  
+        </div>
+    </section>
+</body>
+<footer>
+    <img src="/Projecte_MarcPenas/fotos/logo-removebg-preview.png">
+    <p>© Marc Penas - La Última y me Voy - 2023</p>
+</footer>
+
+
