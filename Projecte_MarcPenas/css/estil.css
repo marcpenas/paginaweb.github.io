@@ -1,0 +1,390 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Google Sans Regular";
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: "Riffie";
+    src: url(/Projecte_MarcPenas/fonts/Goldbugs.ttf);
+}
+@font-face{
+    font-family: "BabyShark";
+    src:url(/Projecte_MarcPenas/fonts/NT\ VALENTINO\ \(Personal\ use\).otf);
+}
+body{
+    background-color: black;
+
+}
+.CasaPiruleta{
+    float: left;
+}
+img#CA{
+        float:left;
+        width: 150px;
+        display: block;
+        -webkit-transition: width .5s, height .5s, margin-right.5s, margin-top.5s;
+
+}
+
+.ham {
+    display: none;
+}
+header{
+    position: fixed;
+    width: 100%;
+    height: auto;
+    background: #2C0523;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -10px;
+}
+.logo {
+    font-family: "Riffie";
+    font-size: 45px;
+    font-weight: bolder;
+    color: #E8F1F2;
+    display: flex;
+    margin-top: 50px;
+}
+.nav_barra ul{
+    display: flex;
+}
+.nav_barra ul li a{
+    font-family: "Riffie";
+    display: block;
+    color: white;
+    font-size: 27px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px
+}
+.nav_barra ul li a:hover{
+    color: black;
+    background-color: whitesmoke;
+}
+.nav_barra ul li .subm_fill{
+    background: #2C0523;
+    align-items: center;
+    position: absolute;
+    display: block;
+    text-align: center;
+    width: auto;
+    z-index: 1000;
+    
+}
+.nav_barra ul li .subm_fill li{
+    display:block;
+    overflow:hidden;
+    border-bottom: 1px solid #E8F1F2;
+}
+.nav_barra ul li .subm_fill li a{
+    display:block;
+    text-align:center;
+    font-family: "Riffie";
+}
+.nav_barra ul li:hover .subm_fill{
+    display:block;
+}
+
+@media screen and (max-width:1100px){
+   .body {
+    padding-top: 60px;
+   }
+   .logo{
+    display: none;
+   }
+    .nav_barra{
+        width: 100%;
+        background: #2C0523;
+        display:block;
+        position: fixed;
+        top: 110px;
+        right: -100%;
+        text-align: center;
+    }
+
+   .ham{
+    display:block;
+    color: white;
+    font-size:25px;
+    font-weight:bold
+   }
+   .ham span{
+    font-size: 50px;
+    }
+    article{
+        width: auto;
+    }
+
+    header nav ul li{
+        display:block;
+        border-bottom:1px solid #E8F1F2;
+        background: #2C0523;
+    }
+    header ul li a{
+        display:block;
+    }
+    header nav ul li .subm-fill{
+        width:100%;
+        position:relative;
+        /*display:block*/
+    }
+    .nav_barra ul li a{
+        font-size: 20px;
+    }
+    header nav ul li .icon2 icon-triangle-down{
+        float: right;
+        margin-left: 10px;
+    }
+    .grid-item p{
+        font-size: 20px;
+    }
+    #seccio1{
+        background:url(/Projecte_MarcPenas/fotos/pub.jpg) 50% 0 center fixed;
+    }
+    .acordeon{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .Culers{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    .contenidor{
+        width: fit-content;
+        margin-right: 70%;
+    }
+    #seccio2 img{
+        width: 100%;
+        height: 100%;
+        padding-bottom: 30px;
+        object-fit: cover;
+    }
+ 
+    .centrat{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    footer{
+        width: auto;
+
+    }
+    footer img{
+        width: 100%;
+        height: auto;
+    };
+
+
+}
+
+#seccio1{
+    background:url(/Projecte_MarcPenas/fotos/pub.jpg) 50% 0 no-repeat fixed;
+    margin: 0px auto;
+    min-height: 700px;
+    max-width: auto;
+    width: 100%;
+    background-size: cover;
+}
+#seccio1 div h2{
+    font-family: "BabyShark";
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    font-size: 50px;
+    -webkit-text-stroke:0.1px white;
+    padding-top: 250px;
+}
+
+#seccio1 div a{
+    font-family: "BabyShark";
+    text-align: right;
+    font-style: italic;
+    color: whitesmoke;
+    font-size: 40px;
+    padding-top: 300px;
+    padding-left: 70%;
+    
+}
+h2{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Riffie";
+    font-size: 85px;
+    margin-top: 3px;
+    padding-top: 30px;
+}
+#seccio2 .acordeon{
+    display: flex;
+}
+#seccio2 img{
+    width: 70%;
+    margin-left: 15%;
+}
+.contenidor{
+    margin:auto;
+    min-height:150px;
+    background: #8E2285;
+}
+
+.noticia{
+    margin: auto;
+    min-height: 50px;
+    background-color: #8E2285;
+
+}
+.titol{
+    width: 100%;
+    height: 50px;
+    background:-moz-linear-gradient(#FA4800, #2C0523);
+    overflow: hidden;
+}
+.Culers{
+    margin: 15px;
+    color:white;
+    font-weight: bold;
+    font-family: "Riffie";
+    font-size: 25px;
+    margin-top: 15px;
+    text-align: center;
+}
+.info{
+    width:100%;
+    height: 0;
+    background-color: #260A26;
+    overflow: hidden;
+    max-height: 0px;
+
+}
+.missg{
+    margin:20px;
+    text-align: justify;
+    color: azure;
+    font-size: 20px;
+}
+.noticia:hover .info{
+    height: auto;
+    cursor: pointer;
+    max-height: 300px;
+    transition: max-height 0.5s;
+}
+
+#seccio2, #seccio3{
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
+#seccio3{
+    width: 100%;
+
+}
+.centrat{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article{
+    display: inline-block;
+    color: white;
+    font-family: sans-serif;
+    padding: 50px;
+}
+.ñam{
+    display:block;
+    background:linear-gradient(70deg, #260A26, #8E2285);
+    border-radius: 10px;
+    height: 360px;
+    width: 400px;
+    padding: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+.snack1{
+    display: block;
+    background: url(/Projecte_MarcPenas/fotos/bravas.jpg) center;
+    height: 180px;
+    width: 180px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+.ñam h3{
+    margin-top: 20px;
+    font-family: "Riffie";
+    font-size: 30px;
+}
+.ñam p{
+    text-justify: auto;
+}
+.snack2{
+    display: block;
+    background: url(/Projecte_MarcPenas/fotos/pescadito.png) center;
+    height: 180px;
+    width: 180px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+.snack3{
+    display: block;
+    background: url(/Projecte_MarcPenas/fotos/croqueta.jpg) center;
+    height: 180px;
+    width: 180px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+#seccio3 h2{
+    padding-top: 50px;
+}
+.grid {
+    width:100%;
+    z-index: -1;
+}
+
+.grid-item {
+    margin-left: 10%;
+    width: calc((100% - 100px) / 5);
+    float: left;
+    padding: 40px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
+}
+
+.grid-item p {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-family: "BabyShark";
+    color: white;
+}
+
+.grid-item img {
+    width: 100%;
+}
+
+@media (max-width:800px){
+    .grid-item{
+        width: calc( (100% - 120px) / 3);
+    }
+
+}
+
+@media (max-width:600px) {
+    .grid-item{
+        width: calc((100% - 100px) / 2);
+    }
+
+}
+footer{
+    text-align: center;
+    background:linear-gradient(#260A26, #8E2285);
+}
+p{
+    color: white;
+}
